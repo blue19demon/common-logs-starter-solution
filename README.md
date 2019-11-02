@@ -9,23 +9,23 @@
 	    <version>0.0.1-SNAPSHOT</version>
      </dependency>	
 #### 3.启动类上加上@EnableLogstash注解开启starter
-		@SpringBootApplication
-		@EnableLogstash//开启starter
-		public class WebLoggerLogstashDemoApplication {
-			public static void main(String[] args) {
-				SpringApplication springApplication = new SpringApplication(WebLoggerLogstashDemoApplication.class);
-				springApplication.run(args);
-			}
+	@SpringBootApplication
+	@EnableLogstash//开启starter
+	public class WebLoggerLogstashDemoApplication {
+		public static void main(String[] args) {
+			SpringApplication springApplication = new SpringApplication(WebLoggerLogstashDemoApplication.class);
+			springApplication.run(args);
 		}
+	}
 
 #### 4.配置
 	logstash:
-			  这里支持FILE和JDBC两种方式
-			  logType: JDBC
-			  系统编码，必填
-			  sysCode: example-system
-			  logType为FILE时必填，生成的日志地址
-			  logPath: web-logger-logstash-example.log
+	  //这里支持FILE和JDBC两种方式
+	  logType: FILE
+	  //系统编码，必填
+	  sysCode: example-system
+	  //logType为FILE时必填，生成的日志地址
+	  logPath: web-logger-logstash-example.log
 #### 5.附加配置
  #### 5.1 如果是logType为JDBC,请下载文件https://github.com/blue19demon/common-logs-starter-solution/blob/master/web-logger-logstash-starter/db/init.sql
  #### 5.2 到你的数据库中执行，并加入配置：
