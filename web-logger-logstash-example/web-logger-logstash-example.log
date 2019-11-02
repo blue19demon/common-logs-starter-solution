@@ -1,0 +1,125 @@
+{
+	"beanName":"com.demo.controller.UserController",
+	"method":"用户管理",
+	"module":"用户登陆",
+	"params":"{\"passwd\":\"123456\",\"username\":\"张三\"}",
+	"remoteAddr":"127.0.0.1",
+	"requestMethod":"GET",
+	"requestTime":354,
+	"result":"JSONOperation(code=200, message=登陆成功!, data=UserAuth(username=张三, passwd=123456))",
+	"sessionId":"4A440E41D54626443AC39B0D3B38A0E3",
+	"system":"web-logger-logstash-example",
+	"time":"2019年11月02日 13时47分44.929秒",
+	"uri":"http://127.0.0.1:82/toLogin"
+}
+{
+	"beanName":"com.demo.controller.UserController",
+	"method":"用户管理",
+	"module":"用户登陆",
+	"params":"{\"passwd\":\"123456\",\"username\":\"张三\"}",
+	"remoteAddr":"127.0.0.1",
+	"requestMethod":"GET",
+	"requestTime":281,
+	"result":"JSONOperation(code=200, message=登陆成功!, data=UserAuth(username=张三, passwd=123456))",
+	"sessionId":"B41E1464B221AC4410665F774060FAA3",
+	"system":"web-logger-logstash-example",
+	"time":"2019年11月02日 13时48分34.402秒",
+	"uri":"http://127.0.0.1:82/toLogin"
+}
+{
+	"beanName":"com.demo.controller.UserController",
+	"method":"用户登陆",
+	"params":"{\"passwd\":\"123456\",\"username\":\"张三\"}",
+	"remoteAddr":"127.0.0.1",
+	"requestMethod":"GET",
+	"requestTime":1280,
+	"result":"JSONOperation(code=500, message=用户名，密码错误, data=null)",
+	"sessionId":"1EAFB64CF0A468C5321A42487A1E9B67",
+	"system":"example-system",
+	"time":"2019年11月02日 14时14分15.146秒",
+	"uri":"http://127.0.0.1:82/toLogin"
+}
+{
+	"beanName":"com.demo.controller.UserController",
+	"method":"用户登陆",
+	"module":"用户管理",
+	"params":"{\"passwd\":\"123456\",\"username\":\"张三\"}",
+	"remoteAddr":"127.0.0.1",
+	"requestMethod":"GET",
+	"requestTime":505,
+	"result":"JSONOperation(code=500, message=用户名，密码错误, data=null)",
+	"sessionId":"98C6FCF58024F4FE24FDD6B25EBD6161",
+	"system":"example-system",
+	"time":"2019年11月02日 14时15分43.377秒",
+	"uri":"http://127.0.0.1:82/toLogin"
+}
+{
+	"beanName":"com.demo.controller.UserController",
+	"method":"用户登陆",
+	"module":"用户管理",
+	"params":"{\"passwd\":\"123\",\"username\":\"zhangsan\"}",
+	"remoteAddr":"127.0.0.1",
+	"requestMethod":"POST",
+	"requestTime":2,
+	"result":"JSONOperation(code=200, message=登陆成功!, data=UserAuth(username=zhangsan, passwd=123))",
+	"sessionId":"D5D5F06F76FB1CA3D1C40E1F67DF9633",
+	"system":"example-system",
+	"time":"2019年11月02日 14时16分19.346秒",
+	"uri":"http://127.0.0.1:82/toLogin"
+}
+{
+	"api":"用户列表",
+	"beanName":"com.demo.controller.UserController",
+	"excuteTime":393,
+	"module":"用户管理",
+	"params":"",
+	"remoteAddr":"127.0.0.1",
+	"requestMethod":"GET",
+	"result":"JSONOperation(code=200, message=操作成功, data=[UserAuth(username=zhangsan, passwd=123), UserAuth(username=李四, passwd=111)])",
+	"sessionId":"6C12780AAE6D102E31A44A380E2D52B8",
+	"system":"example-system",
+	"time":"2019年11月02日 15时52分52.541秒",
+	"uri":"http://127.0.0.1:82/list"
+}
+{
+	"api":"用户列表",
+	"beanName":"com.demo.controller.UserController",
+	"excuteTime":234,
+	"module":"用户管理",
+	"params":"",
+	"remoteAddr":"127.0.0.1",
+	"requestMethod":"GET",
+	"result":"JSONOperation(code=200, message=操作成功, data=[UserAuth(username=zhangsan, passwd=123), UserAuth(username=李四, passwd=111)])",
+	"sessionId":"D4DDF66096460DEED6D342843FAD6266",
+	"system":"example-system",
+	"time":"2019年11月02日 15时56分24.947秒",
+	"uri":"http://127.0.0.1:82/list"
+}
+{
+	"api":"用户列表",
+	"beanName":"com.demo.controller.UserController",
+	"excuteTime":211,
+	"module":"用户管理",
+	"params":"",
+	"remoteAddr":"127.0.0.1",
+	"requestMethod":"GET",
+	"result":"JSONOperation(code=200, message=操作成功, data=[UserAuth(username=zhangsan, passwd=123), UserAuth(username=李四, passwd=111)])",
+	"sessionId":"81687A42F0E84161129DCAE28320E2A5",
+	"system":"example-system",
+	"time":"2019年11月02日 16时03分40.860秒",
+	"uri":"http://127.0.0.1:82/list"
+}
+{
+	"api":"用户列表",
+	"beanName":"com.demo.controller.UserController",
+	"excuteTime":155,
+	"module":"用户管理",
+	"params":"",
+	"remoteAddr":"127.0.0.1",
+	"requestMethod":"GET",
+	"result":"JSONOperation(code=200, message=操作成功, data=[UserAuth(username=zhangsan, passwd=123), UserAuth(username=李四, passwd=111)])",
+	"sessionId":"79DBD2A23E15C976296434543F61781A",
+	"system":"example-system",
+	"time":"2019年11月02日 16时10分40.584秒",
+	"uri":"http://127.0.0.1:82/list"
+}
