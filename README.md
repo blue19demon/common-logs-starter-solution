@@ -20,11 +20,11 @@ public class WebLoggerLogstashDemoApplication {
 
 4.配置
 logstash:
-  #这里支持FILE和JDBC两种方式
+  这里支持FILE和JDBC两种方式
   logType: JDBC
-  #系统编码，必填
+  系统编码，必填
   sysCode: example-system
-  #logType为FILE时必填，生成的日志地址
+  logType为FILE时必填，生成的日志地址
   logPath: web-logger-logstash-example.log
 5.附加配置
  5.1 如果是logType为JDBC,请下载文件https://github.com/blue19demon/common-logs-starter-solution/blob/master/web-logger-logstash-starter/db/init.sql
