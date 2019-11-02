@@ -1,14 +1,14 @@
 # common-logs-starter-solution
-一个基于AOP的通用日志解决方案starter
+## 一个基于AOP的通用日志解决方案starter
 
-1.下载starter
-2.再使用方pom.xml加入如下配置
+#### 1.下载starter
+#### 2.再使用方pom.xml加入如下配置
 <dependency>
 			<groupId>com.logstash</groupId>
 			<artifactId>web-logger-logstash-starter</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 </dependency>
-3.启动类上加上@EnableLogstash注解开启starter
+#### 3.启动类上加上@EnableLogstash注解开启starter
 @SpringBootApplication
 @EnableLogstash//开启starter
 public class WebLoggerLogstashDemoApplication {
@@ -18,7 +18,7 @@ public class WebLoggerLogstashDemoApplication {
 	}
 }
 
-4.配置
+#### 4.配置
 logstash:
   这里支持FILE和JDBC两种方式
   logType: JDBC
@@ -26,16 +26,16 @@ logstash:
   sysCode: example-system
   logType为FILE时必填，生成的日志地址
   logPath: web-logger-logstash-example.log
-5.附加配置
- 5.1 如果是logType为JDBC,请下载文件https://github.com/blue19demon/common-logs-starter-solution/blob/master/web-logger-logstash-starter/db/init.sql
- 5.1 到你的数据库中执行，并加入配置：
+#### 5.附加配置
+ #### 5.1 如果是logType为JDBC,请下载文件https://github.com/blue19demon/common-logs-starter-solution/blob/master/web-logger-logstash-starter/db/init.sql
+ #### 5.2 到你的数据库中执行，并加入配置：
  spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3308/test?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: 123456
- 5.3 加入配置
+ #### 5.3 加入配置
  
 /**
  * logType JDBC時候配置
@@ -103,7 +103,7 @@ public class LogOpreatorConfig {
 		};
 	}
 }
- 6.使用说明，请在Controller层使用，其它层的，比如service层，会导致记录的日志不准确，待解决！
+ #### 6.使用说明，请在Controller层使用，其它层的，比如service层，会导致记录的日志不准确，待解决！
 package com.demo.controller;
 @RestController
 @LogstashModule("用户管理")//加入该注解就会记录日志
@@ -138,10 +138,10 @@ public class UserController {
 	}
 }
 
-7.经过测试，不加注解的Controller就不会开启日志，对业务没有侵入性
+#### 7.经过测试，不加注解的Controller就不会开启日志，对业务没有侵入性
 
 
-8.最终日志记录格式如下：
+#### 8.最终日志记录格式如下：
 2019-11-02 17:11:53.599  INFO 2584 --- [p-nio-82-exec-1] com.logstash.aspect.WebRequestLogAspect  : ===============请求内容===============
 2019-11-02 17:11:53.599  INFO 2584 --- [p-nio-82-exec-1] com.logstash.aspect.WebRequestLogAspect  : 请求地址:http://127.0.0.1:82/toLogin
 2019-11-02 17:11:53.599  INFO 2584 --- [p-nio-82-exec-1] com.logstash.aspect.WebRequestLogAspect  : 请求方式:POST
@@ -164,5 +164,5 @@ public class UserController {
 	"uri":"http://127.0.0.1:82/toLogin"
 }
 
- 9.异常情况下也会记录到日志
+####  9.异常情况下也会记录到日志
 
